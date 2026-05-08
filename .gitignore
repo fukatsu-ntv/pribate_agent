@@ -7,3 +7,15 @@ logs/
 __pycache__/
 *.pyc
 node_modules/
+
+# 経理データ (機密) — keiri エージェント
+keiri/data/input/*
+keiri/data/output/*
+keiri/data/archive/*
+!keiri/data/input/.gitkeep
+!keiri/data/output/.gitkeep
+!keiri/data/archive/.gitkeep
+*.xlsx
+*.xls
+*.xlsm
+!keiri/templates/*.xlsx
