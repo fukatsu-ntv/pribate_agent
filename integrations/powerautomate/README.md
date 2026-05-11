@@ -44,6 +44,8 @@ PA_SHARED_SECRET="<KO さんが発行する 32 byte ランダム文字列>"
 | `get-unread-mails` | 未読メールを最大 N 件取得 | [flows/get-unread-mails.md](flows/get-unread-mails.md) |
 | `teams-notify` | Teams チャネル / チャットへの通知投稿 | [flows/teams-notify.md](flows/teams-notify.md) |
 
+**初回セットアップ**: 画面ごとの逐次手順は [SETUP.md](SETUP.md) を参照。所要 30 〜 45 分。
+
 ## 呼び出し方 (Claude 側)
 
 `scripts/call_flow.sh` の共通ヘルパー経由で叩く:
