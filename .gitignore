@@ -2,6 +2,7 @@ workflows/
 logs/
 .env
 .env.*
+!.env.*.example
 *.local
 .DS_Store
 __pycache__/

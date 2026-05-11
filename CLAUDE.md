@@ -69,9 +69,18 @@
 .claude/commands/    定型ワークフローのスラッシュコマンド
 docs/                設計・要件ドキュメント
 templates/           企画書・伺書テンプレート
+integrations/        外部システム連携 (Power Automate フロー仕様 等)
 keiri/               NTV 経理エージェントの実装 (data/ は gitignore)
 workflows/           実行時の中間成果物 (gitignore)
 ```
+
+## 外部連携 (Phase 1)
+
+- **mail**: Power Automate HTTP トリガ経由で Outlook 未読取得 + Teams 通知
+  - 仕様: `integrations/powerautomate/README.md`
+  - 環境変数: `.env.powerautomate` (gitignore、雛形は `.env.powerautomate.example`)
+  - 呼び出し: `./integrations/powerautomate/scripts/call_flow.sh <flow> <body>`
+- **Outlook カレンダー / OneDrive・SharePoint**: 既存 MCP (calendar / file) を直接利用可能
 
 ## 開発ブランチ
 
